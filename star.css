@@ -1,0 +1,60 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: yellow;
+  }
+  
+  .character-bio {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background-image: url('Poster-assets/star-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .character-bio img {
+    max-width: 350px;
+    margin-right: 30px;
+    border-radius: 10px;
+  }
+  
+  .character-description {
+    max-width: 600px;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: gold;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: rgb(142, 145, 150);
+    margin-top: 30px;
+  }
+  
+  .back-to-list a {
+    text-decoration: none;
+    background-color: #2a0c84;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* border: 2px solid rgb(206, 209, 13); */
+    box-shadow: 3px 3px 7px gold;
+    font-weight: bold;
+  }
+  
+  .back-to-list a:hover {
+    background-color: #2209c0;
+  }
+  
+  

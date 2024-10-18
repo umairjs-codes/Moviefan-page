@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar (same as home page) */
+  nav {
+    background-color: #1f1f1f;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  nav .nav-links a:hover{
+    color:  #ffa500;
+  }
+  
+  /* Quote Section Styling */
+  .quote-section {
+    background: url('Poster-assets/bg-img.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 2rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  .quote-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #ff7e00, #ffe100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  .subheading {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  /* Quote Text */
+  .quote-display {
+    background-color: #252424;
+    box-shadow: 3px 3px 10px goldenrod;
+    border-radius: 25px;
+    color: orange;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  
+  .quote-author {
+    font-family: 'Platypi', serif;
+    font-size: 1.2rem;
+    color: #ffee00;
+    margin-top: 1rem;
+    margin-right: 25px;
+    text-align: right;
+  }
+  
+  /* Infinite Scroll Character Images */
+  .character-scroll {
+    margin-top: 3rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scroll-images {
+    display: flex;
+    width: calc(29 * 150px);
+    animation: scroll 20s linear infinite;
+  }
+  
+  .scroll-images img {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .scroll-images img:hover{
+    transform: scale(1.1);
+  }
+  
+  /* Footer (same as home page) */
+  footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .social-links {
+    margin-bottom: 10px;
+  }
+  
+  footer .social-links a {
+    margin: 0 10px;
+  }
+  
+  footer .social-links img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  
+  footer .footer-text {
+    color: #d3d3d3;
+  }
+  
+  /* Responsive Design */
+
+/* Large Screens (desktops, large laptops) */
+@media (min-width: 1024px) {
+  .quote-heading {
+    font-size: 4rem;
+  }
+
+  .subheading {
+    font-size: 2.2rem;
+  }
+
+  .quote-display {
+    font-size: 2.5rem;
+  }
+
+  .quote-author {
+    font-size: 1.5rem;
+  }
+
+  .scroll-images img {
+    width: 200px;
+  }
+}
+
+/* Medium Screens (tablets, small laptops) */
+@media (max-width: 1023px) {
+  .quote-heading {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .quote-display {
+    font-size: 1.8rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+
+  .scroll-images img {
+    width: 130px;
+  }
+}
+
+/* Small Screens (phones) */
+@media (max-width: 768px) {
+  .quote-heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
+
+  .quote-display {
+    font-size: 1.5rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+
+  .scroll-images img {
+    width: 100px;
+  }
+}
+
+/* Extra Small Screens (small phones) */
+@media (max-width: 480px) {
+  .quote-heading {
+    font-size: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  .quote-display {
+    font-size: 1.2rem;
+  }
+
+  .quote-author {
+    font-size: 0.9rem;
+  }
+
+  .scroll-images img {
+    width: 80px;
+  }
+}
